@@ -8,7 +8,7 @@ for j in range(T):
             flag = False
             break
         if a[i] <= a[i-1]:
-            eat = a[i-1] - a[i] + 1
+            eat = eat + a[i-1] - a[i] + 1
             a[i-1] = a[i-1] - eat
     if flag:
         print(f"#{j+1} {eat}")
